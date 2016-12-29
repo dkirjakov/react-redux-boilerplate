@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// setting base font size to be something that we can easily calculate with
+html {
+  // 10px for default browser configuration for normal browsers
+  font-size: 62.5%;
+}
+
+_:-ms-input-placeholder,
+:root {
+  // 10px for default browser configuration for IE 10 && 11
+  font-size: ~'calc( 1rem * 0.625 )';
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+caption,
+th,
+legend,
+blockquote {
+  color: @grey11;
+  font-family: @poloBuch, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Firefox Bug  */
+legend.access {
+  display: none;
+}
+
+ol {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+th,
+td {
+  vertical-align: top;
+}
+
+a {
+  color: @grey11;
+  font-family: @poloBuch, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+// a:hover {
+//   body:not(.is-touch) & {
+//     text-decoration: underline;
+//   }
+// }
+
+b,
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+figure {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: table;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0.01em 0 0 0;
+  -webkit-margin-end: 0;
+  -webkit-margin-start: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-after: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+input,
+select,
+textarea,
+button {
+  color: @grey10;
+  font-family: @poloBuch, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select,
+textarea {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  font-size: .8rem;
+}
+
+form {
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+.clearfix {
+  min-height: 1%;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  font-size: 1px;
+  height: 0;
+  visibility: hidden;
+}
+
+.access {
+  left: -900rem;
+  position: absolute;
+}
+
+abbr,
+abbr[title] {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  text-decoration: none;
+}
+
+label {
+  display: inline-block;
+}
