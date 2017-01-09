@@ -6,6 +6,9 @@
     "mocha": true
     },
   "rules":{
+    "linebreak-style": ["error", "windows"],
+    "arrow-body-style": 0,
+    "import/prefer-default-export": 0,
     "object-curly-spacing": "off",
     "comma-dangle": ["error", "only-multiline"],
     "max-len":1,

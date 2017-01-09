@@ -1,9 +1,14 @@
 import React from 'react';
 
+import Xkcd from '../components/Xkcd';
+
 class WelcomePage extends React.Component {
   render() {
     return (
-      <span>Hello World</span>
+      <div>
+        <span>Hello World</span>
+        <Xkcd/>
+      </div>
     );
   }
 }
