@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <IndexLink to="/">
-          <h1>EON react redux boilerplate</h1>
+          <h1>react redux boilerplate</h1>
         </IndexLink>
       </div>
     );

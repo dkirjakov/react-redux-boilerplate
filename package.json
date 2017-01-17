@@ -1,7 +1,7 @@
 {
-  "name": "installer-portal-web",
+  "name": "react-boilerplate",
   "version": "0.0.1",
-  "description": "Frontend Project for the eon fuNke Installer Portal",
+  "description": "Frontend Boilerplate to be used in new Projects",
   "engines": {
     "npm": ">=3"
   },

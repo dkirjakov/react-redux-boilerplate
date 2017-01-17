@@ -23,12 +23,16 @@ This Setup comes from the [React Slingshot Project](https://github.com/coryhouse
 ##Folder Structure
 * **/** project root containing all build/environment configuration files (runtime configurations can be put in an seperate */config* folder)
   * **/src** containing all editable source files
-    * **/src/actions** containing all Redux Actions
-    * **/src/components** containing all React Components
+    * **/src/api** containing Apis to external Services
+    * **/src/components** containing all React Components (The Different to Container is that these Components dont contain Application Logic, only Component Logic)
+    * **/src/config** containing all Config Files
     * **/src/constants** containing constents e.g. actionTypes
-    * **/src/pages** containing all React Components which are serving as the Applications Structure e.g. WelcomePage, Impressum, Overlays
-    * **/src/reducers** containing all Redux reducers
+    * **/src/container** containing all React Components which are serving as the Applications Structure e.g. WelcomePage, Impressum, Overlays (The Difference to Components is that these can contain Application Logic)
+    * **/src/reducers** containing the main Reducer
+    * **/src/redux** containing ducks Files [Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux)
     * **/src/store** containing the Redux Store configuration
     * **/src/styles** containing all the less Files, in this folder the global Less Files are placed e.g. `variables.less` or `globals.less`
       * **/src/styles/components** less Files related to Components
-      * **/src/styles/pages** less Files related to Pages
+      * **/src/styles/container** less Files related to Pages
+    * **/src/util** containing utils needed in the Application
+  * **/tools** containing Tools needed to build this Application
